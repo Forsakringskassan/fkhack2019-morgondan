@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <title>Registervård 2.0</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <h1>Registervård 2.0</h1>
+    <h2>Ny förändring ny post</h2>
+    <form action="visaRapport.html">
+        <h3>Databas:</h3>
+        <select>
+            <option>FPG</option>
+            <option>KND</option>
+            <option>ÄHS</option>
+        </select>
+        <h3>Tabell:</h3>
+        <select>
+            <option>Anmälan</option>
+            <option>Ansökan</option>
+            <option>Avstående</option>
+        </select>
+        <h3>Operation:</h3>
+        <input type="radio" name="operation">Ändra<br>
+        <input type="radio" name="operation">Ta bort<br>
+        <input type="radio" name="operation">Lägga till<br>
+        <br>
+        <br>
+        <input type="submit" value="Fortsätt">
+        <button type="reset">Rensa</button>
+    </form>
+    <br>
+
+</div>
+</body>
+</html>

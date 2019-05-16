@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <title>Registervård 2.0</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <h1>Registervård 2.0</h1>
+    <h2>Sök efter poster</h2>
+    <form action="visaSokrapport.html">
+        <h3>Incident-ID: {{incidentId}}</h3>
+        <input type="number" value=900000234>
+        <h3>Handläggare-ID:</h3>
+        <input type="number">
+        <h3>Personnummer för kund:</h3>
+        <input type="number">
+        <h3>Databas:</h3>
+        <select >
+            <option>FPG</option>
+            <option>KND</option>
+            <option>ÄHS</option>
+        </select>
+        <h3>Tabell:</h3>
+        <select >
+            <option>Anmälan</option>
+            <option>Ansökan</option>
+            <option>Avstående</option>
+        </select>
+        <h3>Kolumn:</h3>
+        <select >
+            <option>Kund-ID</option>
+            <option>Antal dagar</option>
+            <option>Barnets personnummer</option>
+        </select>
+        <h3>Värde:</h3>
+        <input type="text">
+        <h3>Operation:</h3>
+        <select>
+            <option>INSERT</option>
+            <option>UPDATE</option>
+            <option>DELETE</option>
+        </select>
+        <h3>Skapat fr.o.m.:</h3>
+        <input type="datetime-local">
+        <h3>Skapat t.o.m.:</h3>
+        <input type="datetime-local">
+        <br>
+        <br>
+        <input type="submit" value="Sök">
+        <button type="reset">Rensa</button>
+    </form>
+</div>
+</body>
+</html>

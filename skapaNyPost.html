@@ -1,0 +1,54 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <title>Registervård 2.0</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <h1>Registervård 2.0</h1>
+    <h2>Skapa ny post</h2>
+    <form action="skapaRegistervard.html">
+        <h3>Incident-ID:</h3>
+        <input type="number" value=900000234 disabled="true">
+        <h3>Handläggare-ID:</h3>
+        <input type="number" value=66124381 disabled="true">
+        <h3>Personnummer: {{personnummer}}</h3>
+        <input type="text" value=20190517-1337>
+        <h3>Kommentar:</h3>
+        <textarea placeholder="Kommentar"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Skapa">
+    </form>
+    <br>
+    <br>
+    <h2>Tidigare registervård för incident-ID 900000234</h2>
+    <table>
+        <tr>
+            <th>
+                Tidpunkt
+            </th>
+            <th>
+                Handläggare
+            </th>
+            <th>
+                Rapport
+            </th>
+        </tr>
+        <tr>
+            <td>
+                2017-05-17 13:36:10
+            </td>
+            <td>
+                66124381
+            </td>
+            <td>
+                <a href="visaRapport.html">Visa</a>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
